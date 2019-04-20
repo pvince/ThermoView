@@ -1,0 +1,9 @@
+<h2>Hubs</h2>
+<div class="panel panel-default" *ngFor="let hub of hubs">
+  <div class="panel-heading">{{hub.id}}</div>
+  <div class="panel-content">
+    <ul class="list-group">
+      <li *ngFor="let sensor of hub.sensors" class="list-group-item">{{sensor}}</li>
+    </ul>
+  </div>
+</div>
